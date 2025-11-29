@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ÁREA 51 CONVENIÊNCIA & TABACARIA</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              alien: {
+                500: '#39ff14', // Neon Green
+                600: '#32cc12',
+                900: '#0a1a0a',
+              },
+              space: {
+                800: '#1a1a2e',
+                900: '#0f0f1a',
+              },
+              neonpink: {
+                500: '#ff00ff',
+              }
+            },
+            animation: {
+              'abduct': 'abduct 3s ease-in-out forwards',
+              'beam': 'beam 2s infinite',
+            },
+            keyframes: {
+              abduct: {
+                '0%': { transform: 'translateY(0) scale(1)', opacity: '1' },
+                '50%': { transform: 'translateY(-200px) scale(0.5)', opacity: '0.8' },
+                '100%': { transform: 'translateY(-1000px) scale(0)', opacity: '0' },
+              },
+              beam: {
+                '0%, 100%': { opacity: '0.2' },
+                '50%': { opacity: '0.6' },
+              }
+            }
+          },
+        },
+      }
+    </script>
+    <style>
+      .bg-starry {
+        background-color: #000000;
+        background-image: 
+          radial-gradient(#39ff14 1px, transparent 1px), 
+          radial-gradient(#ff00ff 1px, transparent 1px);
+        background-size: 50px 50px;
+        background-position: 0 0, 25px 25px;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "lucide-react": "https://aistudiocdn.com/lucide-react@^0.555.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body class="bg-starry text-white font-sans antialiased overflow-x-hidden min-h-screen">
+    <div id="root"></div>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>
