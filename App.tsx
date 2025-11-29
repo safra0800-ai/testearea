@@ -5,7 +5,7 @@ import {
   AlertTriangle, DollarSign, ChevronRight, FileText
 } from 'lucide-react';
 import * as Storage from './services/storage';
-import * as Constants from './constants';
+import * as Constants from './services/storage"
 import { Product, Category, CartItem, Order, Neighborhood, CashClose } from './types';
 
 // --- SUB-COMPONENTS (DEFINED OUTSIDE TO PREVENT RE-RENDERS) ---
