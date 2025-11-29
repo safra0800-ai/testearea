@@ -4,8 +4,8 @@ import {
   Settings, LogOut, Plus, Minus, Trash2, 
   AlertTriangle, DollarSign, ChevronRight, FileText
 } from 'lucide-react';
-import * as Storage from './services/storage';
-import * as Constants from '.constants.ts'
+import * as Storage from './constants.ts';
+import * as Constants from './constants';
 import { Product, Category, CartItem, Order, Neighborhood, CashClose } from './types';
 
 // --- SUB-COMPONENTS (DEFINED OUTSIDE TO PREVENT RE-RENDERS) ---
